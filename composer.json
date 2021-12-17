@@ -1,0 +1,23 @@
+{
+    "name": "lexxyit/env-parser",
+    "description": "Parse the .env file to add new variables to the global environment.",
+    "keywords": ["parsing", ".env", "environment"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lexxyit\\EnvParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LeXxyIT",
+            "email": "lexxywy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {}
+}
