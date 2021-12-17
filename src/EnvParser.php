@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lexxyit\EnvParser;
+namespace LeXxyIT\EnvParser;
 
 use Exception;
 

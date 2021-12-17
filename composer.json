@@ -1,12 +1,16 @@
 {
     "name": "lexxyit/env-parser",
-    "description": "Parse the .env file to add new variables to the global environment.",
-    "keywords": ["parsing", ".env", "environment"],
+    "description": "Parsing the .env file to add new variables to the global environment.",
+    "keywords": [
+        ".env",
+        "dotenv",
+        "environment"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lexxyit\\EnvParser\\": "src/"
+            "LeXxyIT\\EnvParser\\": "src/"
         }
     },
     "authors": [
