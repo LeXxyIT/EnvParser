@@ -1,11 +1,8 @@
 {
     "name": "lexxyit/env-parser",
     "description": "Parsing the .env file to add new variables to the global environment.",
-    "keywords": [
-        ".env",
-        "dotenv",
-        "environment"
-    ],
+    "keywords": ["php", "env", "dotenv", "phpdotenv", "environment", "config", "configuration", "variables"],
+    "homepage": "https://github.com/LeXxyIT",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -16,12 +13,14 @@
     "authors": [
         {
             "name": "LeXxyIT",
-            "email": "lexxywy@gmail.com"
+            "email": "lexxywy@gmail.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0 || >=8.0"
     },
-    "require-dev": {}
+    "require-dev": {},
+    "version": "1.0.0"
 }
