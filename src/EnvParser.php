@@ -7,24 +7,29 @@ namespace LeXxyIT\EnvParser;
 use Exception;
 
 /**
- * Parse the .env file to add new variables to the global environment.
+ * Read and parsing the .env file to add new variables to the global environment
  */
-class EnvParser {
+class EnvParser
+{
 
     /**
      * @param string $path
      * @throws Exception
      */
-    public function load(string $path)
+    public static function load(string $path): void
     {
-        if (!empty($path) && is_file($path)) {
-            $settings = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-            foreach ($settings as $setting) {
-                $setting = trim($setting);
-                if (!empty($setting)) {
-                    $setting = explode('=', $setting, 2);
-                    if (!array_key_exists($setting[0], $_ENV)) {
-                        $_ENV[$setting[0]] = $setting[1];
+        if (is_file($path)) {
+            $file = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            if (!empty($file)) {
+                foreach ($file as $line) {
+                    if (strpos($line, '#') !== 0) {
+                        $line = trim($line);
+                        $line = explode('=', $line, 2);
+                        if (!empty($line[0]) && !empty($line[1])) {
+                            if (!array_key_exists($line[0], $_ENV)) {
+                                $_ENV[$line[0]] = $line[1];
+                            }
+                        }
                     }
                 }
             }
