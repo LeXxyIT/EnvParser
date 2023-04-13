@@ -5,11 +5,6 @@
     "homepage": "https://github.com/LeXxyIT",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "LeXxyIT\\EnvParser\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "LeXxyIT",
@@ -21,5 +16,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeXxyIT\\EnvParser\\": "src/"
+        }
     }
 }
