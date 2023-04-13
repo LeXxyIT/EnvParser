@@ -4,7 +4,7 @@
 
 1. Install package:
 ```shell
-composer require lexxyit/env-parser:dev-master
+composer require lexxyit/env-parser
 ```
 
 2. Create environment file `.env` at the root directory of your project:
