@@ -11,7 +11,6 @@ use Exception;
  */
 class EnvParser
 {
-
     /**
      * @param string $path
      * @throws Exception
@@ -37,5 +36,4 @@ class EnvParser
             throw new Exception('Add correct path to .env file');
         }
     }
-
 }
